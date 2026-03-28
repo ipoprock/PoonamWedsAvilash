@@ -79,8 +79,8 @@ window.WeddingConfig = {
     
     contacts: [
         { name: "Mr. Ganga Prasad", phone: "9358568443" },
-        { name: "Mr. Anuj Rao", phone: "8439700308" },
-        { name: "Mr. Amit Rao", phone: "7217433246" },
+        { name: "Mr. Anuj", phone: "8439700308" },
+        { name: "Mr. Amit", phone: "7217433246" },
         { name: "Mr. Shashi Kant", phone: "9568943596" }
     ],
 

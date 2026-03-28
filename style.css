@@ -88,7 +88,7 @@ section { padding: 100px 0; }
 .sparkle-dot { position: fixed; width: 5px; height: 5px; background: var(--gold-bright); border-radius: 50%; pointer-events: none; z-index: 10002; box-shadow: 0 0 10px var(--gold); }
 
 /* --- Hero --- */
-.hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 100px 20px; position: relative; }
+.hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 0px 20px; position: relative; }
 .shloka-box { margin-bottom: 10px; font-family: 'Prata', serif; color: var(--gold); display: flex; flex-direction: column; align-items: center; }
 .ganesha-icon { width: 80px; height: 80px; margin-bottom: 15px; filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.5)); animation: floatGanesha 4s infinite ease-in-out; }
 @keyframes floatGanesha { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
@@ -105,7 +105,7 @@ section { padding: 100px 0; }
     font-family: 'Prata', serif; 
     font-size: 2rem; 
     color: var(--text);
-    opacity: 0.8;
+    opacity: 1;
 }
 .portrait-frame { max-width: 650px; padding: 15px; background: var(--card-bg); border: 6px double var(--gold); border-radius: 60px 0 60px 0; position: relative; margin: 0 auto 40px; }
 .hero-image { width: 100%; height: 450px; object-fit: cover; border-radius: 50px 0 50px 0; display: block; }
@@ -121,7 +121,7 @@ section { padding: 100px 0; }
     max-width: 800px; 
     margin: 0 auto; 
     overflow: hidden; 
-    border-radius: 60px 0 60px 0; 
+    border-radius: 40px 0 40px 0; 
     border: 6px double var(--gold); 
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     cursor: pointer;
@@ -155,17 +155,17 @@ section { padding: 100px 0; }
 .door-right { right: 0; border-left: 2px solid var(--gold); }
 .door-shutter span { font-family: 'Prata', serif; color: var(--gold); font-size: 2rem; font-weight: 900; letter-spacing: 5px; text-shadow: 0 0 10px rgba(197, 160, 89, 0.5); }
 
-.std-simple-section { padding: 80px 20px; text-align: center; }
+.std-simple-section { padding: 40px 20px; text-align: center; }
 .std-simple-box { 
     width: 100%; 
-    padding: 60px 40px; 
+    padding: 40px 40px; 
     background: var(--card-bg); 
     border: none; /* Removed internal border as container now has it */
     position: relative; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    gap: 20px; 
+    gap: 11px; 
 }
 .std-ornament { color: var(--gold); font-size: 1.2rem; letter-spacing: 10px; opacity: 0.6; }
 .std-content-flex { display: flex; align-items: center; justify-content: center; gap: 50px; flex-wrap: wrap; width: 100%; }
@@ -244,7 +244,7 @@ section { padding: 100px 0; }
     border-radius: 50px 0 50px 0;
 }
 .event-card-pro:hover { transform: translateY(-10px); border-color: var(--gold-bright); opacity: 1; box-shadow: 0 10px 30px rgba(197, 160, 89, 0.2); }
-.event-icon-img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 15px; filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.3)); }
+.event-icon-img { width: 100px; height: 100px; object-fit: contain; margin-bottom: 0px; filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.3)); }
 
 /* --- Venue Showcase Redesigned --- */
 .venue-section-new { padding: 100px 0; }
@@ -272,17 +272,17 @@ section { padding: 100px 0; }
 }
 .venue-card-ultimate:hover .venue-main-img { transform: scale(1.1); }
 
-.venue-inner-content { padding: 60px 40px; text-align: center; position: relative; }
-.venue-icon-img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.4)); }
+.venue-inner-content { padding: 10px 10px; text-align: center; position: relative; }
+.venue-icon-img { width: 100px; height: 100px; object-fit: contain; margin-bottom: 20px; filter: drop-shadow(0 0 10px rgba(197, 160, 89, 0.4)); }
 
-.cinzel-title { font-family: 'Prata', serif; color: var(--gold); font-size: 2.5rem; margin-bottom: 15px; letter-spacing: 5px; }
-.venue-line { position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; }
+.cinzel-title { font-family: 'Prata', serif; color: var(--gold); font-size: 1.8rem; margin-bottom: 0px; letter-spacing: 3px; }
+.venue-line { position: relative; display: flex; align-items: center; justify-content: center; margin-bottom: 0px; }
 .venue-line::before, .venue-line::after { content: ''; height: 1px; width: 60px; background: var(--gold); opacity: 0.5; }
 .venue-line span { margin: 0 15px; color: var(--gold); font-size: 1.2rem; }
 
-.venue-address-text { font-size: 1.1rem; line-height: 1.8; margin-bottom: 35px; color: var(--text); opacity: 0.9; font-weight: 300; }
+.venue-address-text { font-size: 1.1rem; line-height: 1.8; margin-bottom: 10px; color: var(--text); opacity: 0.9; font-weight: 300; }
 
-.map-btn-ultimate { display: inline-flex; align-items: center; justify-content: center; padding: 18px 45px; background: linear-gradient(135deg, var(--gold) 0%, #8b6e37 100%); color: #000; text-decoration: none; font-family: 'Prata', serif; font-weight: 900; border-radius: 50px; letter-spacing: 2px; position: relative; overflow: hidden; transition: 0.4s; border: 1px solid var(--gold-bright); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
+.map-btn-ultimate { display: inline-flex; align-items: center; justify-content: center; padding: 12px 22px; background: linear-gradient(135deg, var(--gold) 0%, #8b6e37 100%); color: #000; text-decoration: none; font-family: 'Prata', serif; font-weight: 900; border-radius: 50px; letter-spacing: 2px; position: relative; overflow: hidden; transition: 0.4s; border: 1px solid var(--gold-bright); box-shadow: 0 10px 20px rgba(0,0,0,0.3); }
 .map-btn-ultimate:hover { transform: scale(1.05); box-shadow: 0 15px 30px rgba(197, 160, 89, 0.4); }
 .btn-glow { position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%); transform: rotate(45deg); animation: btnGlow 3s infinite linear; pointer-events: none; }
 @keyframes btnGlow { 0% { transform: translate(-100%, -100%) rotate(45deg); } 100% { transform: translate(100%, 100%) rotate(45deg); } }
@@ -295,11 +295,11 @@ section { padding: 100px 0; }
 /* --- RSVP Names Card --- */
 .rsvp-names-section { padding: 80px 0 40px; } /* Added bottom padding for spacing */
 .rsvp-names-card { 
-    width: 100%; 
+    width: 90%; 
     max-width: 800px; 
     margin: 0 auto; 
     text-align: center; 
-    padding: 60px 40px; 
+    padding: 40px 40px; 
     border: 6px double var(--gold); 
     border-radius: 60px 0 60px 0;
     position: relative; 
@@ -309,11 +309,11 @@ section { padding: 100px 0; }
 /* --- RSVP Elegant Card Form --- */
 .rsvp-section-new { padding-bottom: 80px; } /* Added spacing below form */
 .rsvp-elegant-card { 
-    width: 100%; 
+    width: 95%; 
     max-width: 800px; 
     margin: 0 auto; 
     background: var(--card-bg); 
-    padding: 60px 40px; 
+    padding: 41px 40px; 
     border: 6px double var(--gold); 
     border-radius: 60px 0 60px 0;
     text-align: center;
